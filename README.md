@@ -29,7 +29,7 @@
 
 - Go to insert mode: `i`
 - Erase character: `x`
-- Erase line: `d$`
+- Erase until end of line: `d$`
 - Erase word: `dw` or `de`
 
 - Discard changes: `:q!`
