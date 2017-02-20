@@ -23,6 +23,8 @@
 - Switch branch: `git checkout <name>`
 - Merge into current branch: `git merge --no-ff <name>`
 
+- Show diff between two branches or commits: `git diff <1> <2>`.
+
 - Nuke repo: `rm -r ./.git/`
 
 ## VIM
