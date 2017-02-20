@@ -1,4 +1,6 @@
-# CLI Cheatsheet
+# TIL
+
+20.02.2017 - Get PID from a port: `lsof -n -i :PORT` for example to get the process that is using port 80: `lsof -n -i :80`.
 
 ## General commands
 
