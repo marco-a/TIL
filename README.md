@@ -9,6 +9,8 @@
   - `tput rc` restore cursor position.
   - `tput colors` get number of supported colors.
  
+ 01.03.2017 - When the dimensions of the terminal change a `SIGWINCH` signal is sent.
+ 
 ## General commands
 
 - Switch directory: `cd <path>`
