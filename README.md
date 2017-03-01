@@ -1,6 +1,7 @@
 # TIL
 
 20.02.2017 - Get PID from a port: `lsof -n -i :PORT | grep LISTEN` for example to get the process that is using port 80: `lsof -n -i :80 | grep LISTEN`.
+
 01.03.2017 - `tput` is a useful command to interact with a TTY:
   - `tput cols` get number of columns.
   - `tput lines` get number of lines.
