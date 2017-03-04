@@ -9,8 +9,9 @@
   - `tput rc` restore cursor position.
   - `tput colors` get number of supported colors.
  
- 01.03.2017 - When the dimensions of the terminal change a `SIGWINCH` signal is sent.
- 
+01.03.2017 - When the dimensions of the terminal change a `SIGWINCH` signal is sent.
+04.03.2017 - PHP's `microtime` and `time` do not return a monotonic timestamp. This is bad for timing because the returned timestamp is dependent on the user's time setting.
+
 ## General commands
 
 - Switch directory: `cd <path>`
