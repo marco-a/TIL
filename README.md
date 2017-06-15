@@ -13,6 +13,8 @@
 
 04.03.2017 - PHP's `microtime` and `time` do not return a monotonic timestamp. This is bad for timing because the returned timestamp is dependent on the user's time setting.
 
+15.06.2017 - Use `CTRL+Z` to pause execution of a long command. To resume simply enter `%`.
+
 ## General commands
 
 - Switch directory: `cd <path>`
