@@ -15,6 +15,12 @@
 
 15.06.2017 - Use `CTRL+Z` to pause execution of a long command. To resume simply enter `%`.
 
+23.07.2017 - When bundling packages it's common to set the owner and group to `root:root`.
+This is because when extracting as a normal user, tar will set the owner to the current user executing the command.
+However, extracting as root retains the owner and group from the tar archive.
+This can lead to wrong / corrupt ownership permissions. 
+To set the root:root ownership without having to need root permissions you can use `fakeroot` to bundle the tar.
+
 ## General commands
 
 - Switch directory: `cd <path>`
