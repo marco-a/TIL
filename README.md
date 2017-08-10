@@ -21,6 +21,8 @@ However, extracting as root retains the owner and group from the tar archive.
 This can lead to wrong / corrupt ownership permissions. 
 To set the root:root ownership without having to need root permissions you can use `fakeroot` to bundle the tar.
 
+10.08.2017 - PHP's `session_start()` can return `true` even when the session was not created. Workaround: create a value and save it to disk to check if the disk storage is sufficient.
+
 ## General commands
 
 - Switch directory: `cd <path>`
