@@ -23,7 +23,7 @@ To set the root:root ownership without having to need root permissions you can u
 
 10.08.2017 - PHP's `session_start()` can return `true` even when the session was not created. Workaround: create a value and save it to disk to check if the disk storage is sufficient.
 
-13.08.2017 - `return`ing in a `finally` block causes the Exception to be 'swallowed': *A function can either throw an exception or return a value but not both.*
+13.08.2017 - `return`ing in a `finally` block causes an exception to be 'swallowed': **A function can either throw an exception or return a value but not both.**
 
 ## General commands
 
@@ -36,7 +36,7 @@ To set the root:root ownership without having to need root permissions you can u
 
 - Init repo: `git init`
 - Add file: `git add <filename>`
-- Remove file: `git rm <filename>`
+- Remove file: `git rm [-r] <filename>`
 - Remove file without deleting it from disk: `git rm --cached <filename>`
 - Show repo status: `git status`
 - Commit changes: `git commit`
@@ -46,9 +46,14 @@ To set the root:root ownership without having to need root permissions you can u
 - Switch branch: `git checkout <name>`
 - Merge into current branch: `git merge --no-ff <name>`
 
-- Show diff between two branches or commits: `git diff <1> <2>`.
+- Pushing tags: `git push origin tag-name`
+- Removing tags on origin: `git push :refs/tags/tag-name`.
+- Removing tags locally: `git tag -d tag-name`.
 
-- Nuke repo: `rm -r ./.git/`
+- Show diff between two branches or commits: `git diff <1> <2>`.
+- Show diff between current HEAD and last commit: `git diff HEAD^`.
+
+- Nuke repo: `rm -r .git`
 
 ## VIM
 
