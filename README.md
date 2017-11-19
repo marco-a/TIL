@@ -25,6 +25,8 @@ To set the root:root ownership without having to need root permissions you can u
 
 13.08.2017 - `return`ing in a `finally` block causes an exception to be 'swallowed': **A function can either throw an exception or return a value but not both.**
 
+19.11.2017 - Bash's `command &> output` is not POSIX compliant. Portable scripts should use `command > output 2>&1`.
+
 ## General commands
 
 - Switch directory: `cd <path>`
