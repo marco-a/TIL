@@ -29,10 +29,10 @@ To set the root:root ownership without having to need root permissions you can u
 
 06.03.2017 - Linux kernel modules: 
 
-Load module: `modprobe <module-name> <module-params>`.
-Unload module: `modprobe -r <module-name>`.
-Force unload: `rmmod -f <module-name>`.
-List loaded modules: `lsmod`.
+- Load module: `modprobe <module-name> <module-params>`.
+- Unload module: `modprobe -r <module-name>`.
+- Force unload: `rmmod -f <module-name>`.
+- List loaded modules: `lsmod`.
      
 06.03.2017 - nandsim kernel module:
 
@@ -47,14 +47,19 @@ fourth_id_byte=0x00 (optional)
 06.03.2017 - Mounting an UBIFS image:
 
 `$ modprobe nandsim (first_id_byte ...)`
+
 `$ modprobe ubi`
+
 `$ ubiformat /dev/mtdX -y -f UBIFS.img` (you may need to use `-O` and `-s`)
+
 `$ ubiattach -p /dev/mtdX`
+
 `$ mount -t ubifs ubiX /path/to/mount/point/`
 
 Unmounting:
 
 `$ umount /path/to/mount/point/`
+
 `$ ubidetach -p /dev/mtdX`
 
 ## General commands
