@@ -39,11 +39,15 @@ To set the root:root ownership without having to need root permissions you can u
 `nandsim` simulates a NAND chip:
 
 first_id_byte=0x00 (manufacturer ID)
+
 second_id_byte=0x00 (chip ID)
+
 third_id_byte=0x00 (optional)
+
 fourth_id_byte=0x00 (optional)
 
 06.03.2017 - One can list all MT-devices with `$ cat /proc/mtd`.
+
 06.03.2017 - Mounting an UBIFS image:
 
 `$ modprobe nandsim (first_id_byte ...)`
