@@ -66,7 +66,7 @@ Unmounting:
 
 `$ ubidetach -p /dev/mtdX`
 
-27.11.2018 - `kill -0 <pid>` (checkung if "process exists") can fail with `Operation not permitted`.
+27.11.2018 - `kill -0 <pid>` (checking if "process exists") can fail with `Operation not permitted`.
 
 ## General commands
 
