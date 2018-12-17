@@ -68,6 +68,8 @@ Unmounting:
 
 27.11.2018 - `kill -0 <pid>` (checking if "process exists") can fail with `Operation not permitted`.
 
+17.12.2018 - `seteuid` and `setegid` instead of `setuid` and `setgid` (if you want to change back to root later).
+
 ## General commands
 
 - Switch directory: `cd <path>`
