@@ -70,6 +70,8 @@ Unmounting:
 
 17.12.2018 - `seteuid` and `setegid` instead of `setuid` and `setgid` (if you want to change back to root later).
 
+29.03.2019 - If you need to know which user called `sudo [command]` you can read the `SUDO_UID` and `SUDO_GID` environment variables.  
+
 ## General commands
 
 - Switch directory: `cd <path>`
