@@ -72,6 +72,10 @@ Unmounting:
 
 29.03.2019 - If you need to know which user called `sudo [command]` you can read the `SUDO_UID` and `SUDO_GID` environment variables.  
 
+23.06.2019 - `console.log()` in node may leak memory.
+
+23.06.2019 - To test network speed use `pv /dev/zero | nc -l PORT` respectively `nc IP PORT > /dev/null`.
+
 ## General commands
 
 - Switch directory: `cd <path>`
