@@ -66,6 +66,8 @@ Unmounting:
 
 `$ ubidetach -p /dev/mtdX`
 
+09.03.2018 - Flickering animations in WebKit? Add `transform: translate3d(0, 0, 0);` to element before executing animation.
+
 27.11.2018 - `kill -0 <pid>` (checking if "process exists") can fail with `Operation not permitted`.
 
 17.12.2018 - `seteuid` and `setegid` instead of `setuid` and `setgid` (if you want to change back to root later).
