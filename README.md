@@ -78,6 +78,8 @@ Unmounting:
 
 23.06.2019 - To test network speed use `pv /dev/zero | nc -l PORT` respectively `nc IP PORT > /dev/null`.
 
+21.07.2020 - One can set `PS1` with a script: `PROMPT_COMMAND` in bash or `precmd()` in ZSH.
+
 ## General commands
 
 - Switch directory: `cd <path>`
