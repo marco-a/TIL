@@ -80,6 +80,8 @@ Unmounting:
 
 21.07.2020 - One can set `PS1` with a script: `PROMPT_COMMAND` in bash or `precmd()` in ZSH.
 
+30.08.2020 - JavaScript: `ArrayBuffer` is a fast array buffer. Needs a ''view'' to access/modify data. For example `Uint8Array` or `Uint16Array`.
+
 ## General commands
 
 - Switch directory: `cd <path>`
